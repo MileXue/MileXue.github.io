@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Mile Xue is a University of Toronto Mathematics and Statistics student focused on quantitative finance, investment research, and data analysis."
+    />
+    <meta name="theme-color" content="#0c2636" />
+    <meta property="og:title" content="Mile Xue | Quantitative Finance Portfolio" />
+    <meta
+      property="og:description"
+      content="Quantitative research, investment analysis, and data-driven decision making."
+    />
+    <meta property="og:type" content="website" />
+    <title>Mile Xue | Quantitative Finance Portfolio</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Mile Xue home">
+        <svg aria-hidden="true" viewBox="0 0 48 48">
+          <circle cx="24" cy="24" r="20" />
+          <path d="M24 8l4.2 11.8L40 24l-11.8 4.2L24 40l-4.2-11.8L8 24l11.8-4.2L24 8z" />
+          <circle cx="24" cy="24" r="3.5" />
+        </svg>
+        <span>Mile Xue</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a class="nav-cta" href="#contact">Send a signal</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-map-lines" aria-hidden="true"></div>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Toronto · Quantitative Finance · U of T</p>
+          <h1 id="hero-title">Charting markets.<br /><em>Testing assumptions.</em></h1>
+          <p class="hero-lede">
+            I’m Mile Xue, a Mathematics and Statistics student who turns noisy data into clear,
+            decision-ready investment research.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore the voyage</a>
+            <a class="button button-ghost" href="mailto:monkeydmile@gmail.com">Email me</a>
+          </div>
+          <dl class="quick-stats" aria-label="Portfolio highlights">
+            <div><dt>7</dt><dd>research builds</dd></div>
+            <div><dt>20K</dt><dd>Monte Carlo paths</dd></div>
+            <div><dt>SAS</dt><dd>certified specialist</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="An illustrated nautical route through Mile's research portfolio">
+          <div class="navigator-card">
+            <p class="card-kicker">Navigator’s record</p>
+            <div class="portrait-mark" aria-hidden="true">
+              <span>MX</span>
+              <svg viewBox="0 0 180 180">
+                <circle cx="90" cy="90" r="78" />
+                <path d="M90 23l12.5 52.5L157 90l-54.5 14.5L90 157l-12.5-52.5L23 90l54.5-14.5L90 23z" />
+              </svg>
+            </div>
+            <h2>Mile Xue</h2>
+            <p>Financial Data Analyst</p>
+            <div class="card-stamp">Math × Markets</div>
+          </div>
+
+          <svg class="route-map" viewBox="0 0 520 470" aria-hidden="true">
+            <path class="route" d="M52 389C105 335 98 276 166 257c67-20 88 43 151 6 53-31 25-94 87-126 24-13 48-11 70-6" />
+            <path class="route-dash" d="M52 389C105 335 98 276 166 257c67-20 88 43 151 6 53-31 25-94 87-126 24-13 48-11 70-6" />
+            <g class="island island-one"><circle cx="55" cy="389" r="18" /><path d="M37 390c13-11 22-22 38-8 8 7 10 16 13 25H28c2-7 5-12 9-17z" /></g>
+            <g class="island island-two"><circle cx="174" cy="254" r="18" /><path d="M151 266l18-34 16 14 14 30h-53z" /></g>
+            <g class="island island-three"><circle cx="325" cy="257" r="18" /><path d="M301 267c13-31 34-31 50 0h-50z" /></g>
+            <g class="island island-four"><circle cx="472" cy="132" r="18" /><path d="M448 144l17-34 11 17 9-9 13 26h-50z" /></g>
+            <g class="ship" transform="translate(258 281) rotate(-18)">
+              <path d="M0 17h55l-10 15H12L0 17z" />
+              <path d="M28 16V-22" />
+              <path d="M30-20c15 2 24 9 26 20H30V-20z" />
+              <path d="M25-17C13-13 7-6 7 3h18v-20z" />
+            </g>
+            <g class="compass" transform="translate(400 358)">
+              <circle cx="0" cy="0" r="48" />
+              <circle cx="0" cy="0" r="39" />
+              <path d="M0-31L8-7 31 0 8 7 0 31-8 7-31 0-8-7 0-31z" />
+              <text x="0" y="-53">N</text>
+            </g>
+          </svg>
+        </div>
+
+        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+          <span>Follow the route</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="section section-light" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · The navigator</p>
+          <h2 id="about-title">A clear read in uncertain waters.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="large-copy">
+              I study Mathematics and Statistics at the University of Toronto and build practical
+              research across public markets, private-equity replication, derivatives, portfolio
+              risk, and early-stage investing.
+            </p>
+            <p>
+              My process is simple: define the decision, test the assumptions, quantify the risk,
+              and write the honest conclusion—even when the answer is “pass.”
+            </p>
+          </div>
+          <div class="principles reveal" aria-label="Working principles">
+            <article>
+              <span>01</span>
+              <div><h3>Start with the question</h3><p>Every model serves a concrete investment decision.</p></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div><h3>Stress the story</h3><p>Scenario analysis exposes what smooth averages can hide.</p></div>
+            </article>
+            <article>
+              <span>03</span>
+              <div><h3>Make the call</h3><p>Research ends with a concise recommendation and its limits.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 · Captain’s log</p>
+          <h2 id="experience-title">Education and experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2025—2029</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-label">Education</p>
+              <h3>University of Toronto</h3>
+              <p class="timeline-subtitle">Honours Bachelor of Science · Mathematics and Statistics</p>
+              <p>Coursework includes economics, Python, linear algebra, calculus, and statistics.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Jun—Aug 2026</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <p class="timeline-label">Experience</p>
+              <h3>Financial Data Analyst Intern</h3>
+              <p class="timeline-subtitle">Quantum Finance · Remote</p>
+              <p>
+                Researched funds, stocks, and ETFs; translated factor models, scenario analyses,
+                and risk-return trade-offs into concise investment memos.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Sep 2026</div>
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card certification-card">
+              <p class="timeline-label">Certification</p>
+              <h3>SAS Certified Specialist</h3>
+              <p class="timeline-subtitle">Base Programming Using SAS 9.4</p>
+              <div class="seal" aria-hidden="true">SAS</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-parchment" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 · The voyage map</p>
+          <h2 id="projects-title">Selected research</h2>
+          <p>Seven projects, each built around a real investment question and a measurable decision.</p>
+        </div>
+
+        <div class="project-toolbar reveal" role="group" aria-label="Filter projects">
+          <button class="filter-button is-active" type="button" data-filter="all">All voyages</button>
+          <button class="filter-button" type="button" data-filter="quant">Quant</button>
+          <button class="filter-button" type="button" data-filter="risk">Risk</button>
+          <button class="filter-button" type="button" data-filter="investing">Investing</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal" data-category="quant risk investing">
+            <div class="project-number">01</div>
+            <div class="project-tags"><span>Factor models</span><span>Private equity</span><span>Python</span></div>
+            <h3>Private Equity Replication &amp; Desmoothing</h3>
+            <p>
+              Tested whether a listed private-equity ETF behaves like private markets or public equity,
+              then corrected appraisal-smoothed returns to reveal the underlying risk.
+            </p>
+            <dl class="project-metrics">
+              <div><dt>1.18</dt><dd>market beta</dd></div>
+              <div><dt>0.97</dt><dd>R-squared</dd></div>
+              <div><dt>1.6×</dt><dd>risk understatement</dd></div>
+            </dl>
+            <details>
+              <summary>Read the result</summary>
+              <p>
+                The fund behaved primarily like public equity with size and growth tilts. Desmoothing
+                raised the estimated probability of a one-year loss from 18.6% to 31.0%.
+              </p>
+            </details>
+          </article>
+
+          <article class="project-card reveal" data-category="quant risk">
+            <div class="project-number">02</div>
+            <div class="project-tags"><span>Monte Carlo</span><span>Convertibles</span></div>
+            <h3>Convertible Arbitrage &amp; Delta Hedging</h3>
+            <p>
+              Combined bond-floor valuation, equity-option analysis, and a delta-hedged simulation to
+              screen convertible securities for volatility mispricing.
+            </p>
+            <dl class="project-metrics compact">
+              <div><dt>20K</dt><dd>paths</dd></div>
+              <div><dt>126</dt><dd>trading days</dd></div>
+            </dl>
+          </article>
+
+          <article class="project-card reveal" data-category="quant investing risk">
+            <div class="project-number">03</div>
+            <div class="project-tags"><span>Options</span><span>Replication</span></div>
+            <h3>Defined Outcome Pricing</h3>
+            <p>
+              Recreated buffered ETF payoff structures with listed options and measured the trade-off
+              between downside protection, financing, and upside caps.
+            </p>
+            <dl class="project-metrics compact">
+              <div><dt>4</dt><dd>payoff structures</dd></div>
+              <div><dt>0.25–0.90</dt><dd>cap gap</dd></div>
+            </dl>
+          </article>
+
+          <article class="project-card reveal" data-category="quant risk">
+            <div class="project-number">04</div>
+            <div class="project-tags"><span>Portfolio risk</span><span>Bootstrap</span></div>
+            <h3>Antifragile Barbell Analysis</h3>
+            <p>
+              Compared growth, drawdown, convexity, and probability of ruin across four portfolio
+              structures, including sensitivity to return smoothing and block length.
+            </p>
+            <dl class="project-metrics compact">
+              <div><dt>180</dt><dd>monthly observations</dd></div>
+              <div><dt>0.55%</dt><dd>modeled ruin risk</dd></div>
+            </dl>
+          </article>
+
+          <article class="project-card reveal" data-category="quant risk">
+            <div class="project-number">05</div>
+            <div class="project-tags"><span>Pairs trading</span><span>Diagnostics</span></div>
+            <h3>AI Power Pair Trading</h3>
+            <p>
+              Screened power-sector pairs for mean reversion, controlled for multiple testing, and
+              rejected the strategy after costs when the evidence did not hold.
+            </p>
+            <dl class="project-metrics compact">
+              <div><dt>24</dt><dd>pairs screened</dd></div>
+              <div><dt>Pass</dt><dd>final decision</dd></div>
+            </dl>
+          </article>
+
+          <article class="project-card reveal" data-category="quant">
+            <div class="project-number">06</div>
+            <div class="project-tags"><span>Regression</span><span>Housing</span></div>
+            <h3>U.S. Housing Price Prediction</h3>
+            <p>
+              Cleaned macroeconomic data, selected features, and iteratively refined a linear model in
+              Google Sheets using MAE and MSE for evaluation.
+            </p>
+            <dl class="project-metrics compact">
+              <div><dt>&lt;10%</dt><dd>prediction error</dd></div>
+              <div><dt>MAE/MSE</dt><dd>evaluation</dd></div>
+            </dl>
+          </article>
+
+          <article class="project-card reveal" data-category="investing risk">
+            <div class="project-number">07</div>
+            <div class="project-tags"><span>Seed-stage</span><span>Valuation</span></div>
+            <h3>Seed-Stage Deal Review</h3>
+            <p>
+              Evaluated a vertical-AI opportunity across traction quality, ARR multiples, ownership,
+              dilution, and exit scenarios; delivered a disciplined pass recommendation.
+            </p>
+            <p class="confidential-note">Case details anonymized to respect confidentiality.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-light" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 · Ship’s toolkit</p>
+          <h2 id="skills-title">Methods for the journey</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">⌘</div>
+            <h3>Code &amp; data</h3>
+            <ul><li>Python · pandas · NumPy</li><li>SAS 9.4</li><li>Excel · Google Sheets</li><li>Data cleaning &amp; EDA</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">∑</div>
+            <h3>Quantitative methods</h3>
+            <ul><li>Linear regression</li><li>Fama-French factor models</li><li>Monte Carlo simulation</li><li>Desmoothing &amp; scenarios</li></ul>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">◇</div>
+            <h3>Investment analysis</h3>
+            <ul><li>Public &amp; private equity</li><li>ETF &amp; options analysis</li><li>Seed-stage valuation</li><li>ARR multiples · MOIC</li></ul>
+          </article>
+          <article class="skill-card personal-card reveal">
+            <div class="skill-icon" aria-hidden="true">✦</div>
+            <h3>Beyond the models</h3>
+            <p>English · IELTS 7.0</p>
+            <p>Oil painting and sketching sharpen the same habits I use in research: observation, patience, and composition.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-map" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="contact-content reveal">
+          <p class="eyebrow">05 · Next destination</p>
+          <h2 id="contact-title">Have a question worth navigating?</h2>
+          <p>I’m always interested in thoughtful conversations about markets, models, and investment decisions.</p>
+          <a class="button button-primary" href="mailto:monkeydmile@gmail.com">monkeydmile@gmail.com</a>
+          <p class="contact-location">Toronto, Ontario, Canada</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span data-year></span> Mile Xue. Built for the open web.</p>
+      <a href="#top">Back to the crow’s nest ↑</a>
+    </footer>
+  </body>
+</html>
