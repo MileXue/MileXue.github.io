@@ -192,7 +192,7 @@
         <div class="section-heading reveal">
           <p class="eyebrow">03 · The voyage map</p>
           <h2 id="projects-title">Selected research</h2>
-          <p>Seven projects, each built around a real investment question and a measurable decision.</p>
+          <p>Two research deep dives, followed by five further explorations in markets, models, and investment decisions.</p>
         </div>
 
         <div class="project-toolbar reveal" role="group" aria-label="Filter projects">
@@ -203,30 +203,45 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card project-featured reveal" data-category="quant risk investing">
-            <div class="project-number">01</div>
-            <div class="project-tags"><span>Factor models</span><span>Private equity</span><span>Python</span></div>
-            <h3>Private Equity Replication &amp; Desmoothing</h3>
-            <p>
-              Tested whether a listed private-equity ETF behaves like private markets or public equity,
-              then corrected appraisal-smoothed returns to reveal the underlying risk.
-            </p>
-            <dl class="project-metrics">
-              <div><dt>1.18</dt><dd>market beta</dd></div>
-              <div><dt>0.97</dt><dd>R-squared</dd></div>
-              <div><dt>1.6×</dt><dd>risk understatement</dd></div>
-            </dl>
-            <details>
-              <summary>Read the result</summary>
-              <p>
-                The fund behaved primarily like public equity with size and growth tilts. Desmoothing
-                raised the estimated probability of a one-year loss from 18.6% to 31.0%.
-              </p>
-            </details>
+          <article class="project-card project-featured research-case reveal" id="pe-research" data-category="quant risk investing">
+            <div class="case-topline"><span>01 / Internship · Project 2</span><span>Quantitative research</span></div>
+            <div class="case-intro"><div><div class="project-tags"><span>Python</span><span>Five-factor model</span><span>Monte Carlo</span></div>
+              <h3>What hides behind<br />a smooth return?</h3>
+              <p>Private Equity Replication &amp; Desmoothing</p></div>
+              <p class="case-question">Can listed equities replicate private-equity exposure—and how much risk does appraisal smoothing conceal?</p></div>
+            <div class="research-stats"><div><strong>1.18</strong><span>Market-factor beta</span></div><div><strong>96.7%</strong><span>Five-factor model R²</span></div><div><strong>1.64×</strong><span>Volatility after desmoothing</span></div></div>
+            <div class="research-panels">
+              <figure class="research-panel"><figcaption><span class="figure-number">A / Risk revealed</span><h4>Same series. A different risk picture.</h4></figcaption>
+                <div class="chart-controls" role="group" aria-label="Risk comparison metric"><button type="button" data-risk="volatility" aria-pressed="true">Volatility</button><button type="button" data-risk="loss" aria-pressed="false">Probability of loss</button></div>
+                <div class="bar-chart" aria-live="polite"><div class="bar-row"><div><span>Reported PE</span><strong data-risk-reported>9.36%</strong></div><div class="bar-track"><span class="bar-reported" data-risk-bar-reported style="width:23.4005%"></span></div></div><div class="bar-row"><div><span>Desmoothed PE</span><strong data-risk-desmoothed>15.34%</strong></div><div class="bar-track"><span class="bar-desmoothed" data-risk-bar-desmoothed style="width:38.3521%"></span></div></div><div class="chart-axis"><span>0%</span><span>20%</span><span>40%</span></div><p class="chart-takeaway" data-risk-note>Annualized volatility rises by 5.98 percentage points after desmoothing.</p></div>
+              </figure>
+              <figure class="research-panel"><figcaption><span class="figure-number">B / One-year scenarios</span><h4>The downside becomes harder to ignore.</h4></figcaption>
+                <svg class="range-chart" viewBox="0 0 440 220" role="img" aria-labelledby="range-title range-desc"><title id="range-title">Simulated one-year returns, 10th to 90th percentile</title><desc id="range-desc">Reported PE blend: minus 2.32 to 14.94 percent, median 5.67 percent. Desmoothed PE blend: minus 7.26 to 20.54 percent, median 5.21 percent.</desc>
+                  <g class="range-grid"><path d="M40 35V180 M160 35V180 M280 35V180 M400 35V180"/><path class="zero-line" d="M160 30V180"/></g>
+                  <g class="range-label"><text x="40" y="25">Reported PE blend</text><text x="40" y="108">Desmoothed PE blend</text></g>
+                  <path class="range-reported" d="M132.1 60H339.3"/><path class="range-desmoothed" d="M72.8 143H406.5"/>
+                  <circle class="median-dot" cx="228.1" cy="60" r="6"/><circle class="median-dot" cx="222.5" cy="143" r="6"/>
+                  <g class="range-values"><text x="132" y="84">−2.32%</text><text x="339" y="84">14.94%</text><text x="73" y="167">−7.26%</text><text x="406" y="167">20.54%</text><text x="40" y="205">−10%</text><text x="160" y="205">0%</text><text x="280" y="205">10%</text><text x="400" y="205">20%</text></g>
+                </svg><p class="chart-caption">Line: 10th–90th percentile · Dot: median<br />60% world equity / 40% PE proxy · Simulated, not realized returns</p>
+              </figure>
+            </div>
+            <details class="method-details"><summary>Explore the factor exposures &amp; methodology</summary><div class="factor-grid"><div><span>Market</span><strong>+1.177</strong></div><div><span>Size · SMB</span><strong>+0.214</strong></div><div><span>Value · HML</span><strong>−0.382</strong></div><div><span>Profitability · RMW</span><strong>+0.275</strong></div><div><span>Investment · CMA</span><strong>−0.081</strong></div></div><p>Fit excess returns to five equity factors (36 observations), apply a first-order desmoothing correction, then compare risk and simulated one-year portfolio outcomes. The fitted exposures suggest strong public-equity sensitivity and a growth tilt. R² describes the full five-factor model, not the market factor alone.</p></details>
+            <div class="case-conclusion"><span>Research takeaway</span><p>Smooth reported returns can obscure risk. A liquid replication strategy still needs to be understood through its public-equity exposures.</p></div>
+            <p class="source-note">Source: Project 2 exported factor_model.csv, risk_comparison.csv and scenarios.csv. Research illustration: the project documentation identifies the private-equity benchmark as placeholder data; these outputs are not verified live fund performance.</p>
           </article>
 
+          <article class="project-card deal-case research-case reveal" id="deal-research" data-category="investing risk">
+            <div class="case-topline"><span>02 / Internship · Project 3</span><span>Investment due diligence</span></div>
+            <div class="case-intro"><div><div class="project-tags"><span>Vertical AI</span><span>Seed-stage</span><span>Investment memo</span></div><h3>A compelling product.<br />A disciplined pass.</h3><p>Seed-Stage Deal Review · Anonymized case</p></div><p class="case-question">Strong early traction is only the start. Does the evidence support the growth plan, entry price, and ownership required?</p></div>
+            <div class="decision-path" aria-label="Due diligence sequence"><span>01 · Traction</span><span>02 · Valuation</span><span>03 · Ownership</span><strong>Pass</strong></div>
+            <div class="deal-layout"><div class="diligence-options" role="group" aria-label="Explore the investment review"><button type="button" data-deal="traction" aria-pressed="true"><span>01 / Growth quality</span><strong>Pipeline ≠ paying customers</strong><span>Test the conversion assumptions →</span></button><button type="button" data-deal="valuation" aria-pressed="false"><span>02 / Entry valuation</span><strong>Price depends on the ramp</strong><span>Separate today's evidence from forecasts →</span></button><button type="button" data-deal="ownership" aria-pressed="false"><span>03 / Portfolio fit</span><strong>Ownership shapes the decision</strong><span>Connect check size, control, and returns →</span></button></div>
+              <div class="deal-evidence" aria-live="polite" aria-atomic="true"><span class="figure-number" data-deal-eyebrow>Evidence lens / Traction</span><h4 data-deal-title>Separate live revenue from ambition.</h4><div class="evidence-flow"><span data-deal-step-one>Live ARR</span><i aria-hidden="true">→</i><span data-deal-step-two>Committed ARR</span><i aria-hidden="true">→</i><span data-deal-step-three>Forecast ARR</span></div><p data-deal-body>The review distinguishes revenue already live from customer commitments and the future growth target. A large shop pipeline supports the opportunity, but conversion and higher revenue per shop still have to materialize.</p><div class="evidence-question"><span>What would change the view?</span><p data-deal-question>Evidence that the pipeline converts into paying shops and that expansion revenue supports the planned ramp.</p></div></div>
+            </div>
+            <div class="case-conclusion"><span>Investment judgment / Pass</span><p>Early traction and product fit were promising. The ambitious revenue ramp, demanding entry valuation, and difficulty securing the required ownership and board position outweighed the opportunity.</p></div>
+            <p class="source-note">Based on the completed Project 3 deal review. Company and investor identities, transaction figures, and source documents are withheld; this view presents the analytical framework and the review's conclusion.</p>
+          </article>
           <article class="project-card reveal" data-category="quant risk">
-            <div class="project-number">02</div>
+            <div class="project-number">03</div>
             <div class="project-tags"><span>Monte Carlo</span><span>Convertibles</span></div>
             <h3>Convertible Arbitrage &amp; Delta Hedging</h3>
             <p>
@@ -240,7 +255,7 @@
           </article>
 
           <article class="project-card reveal" data-category="quant investing risk">
-            <div class="project-number">03</div>
+            <div class="project-number">04</div>
             <div class="project-tags"><span>Options</span><span>Replication</span></div>
             <h3>Defined Outcome Pricing</h3>
             <p>
@@ -254,7 +269,7 @@
           </article>
 
           <article class="project-card reveal" data-category="quant risk">
-            <div class="project-number">04</div>
+            <div class="project-number">05</div>
             <div class="project-tags"><span>Portfolio risk</span><span>Bootstrap</span></div>
             <h3>Antifragile Barbell Analysis</h3>
             <p>
@@ -268,7 +283,7 @@
           </article>
 
           <article class="project-card reveal" data-category="quant risk">
-            <div class="project-number">05</div>
+            <div class="project-number">06</div>
             <div class="project-tags"><span>Pairs trading</span><span>Diagnostics</span></div>
             <h3>AI Power Pair Trading</h3>
             <p>
@@ -282,7 +297,7 @@
           </article>
 
           <article class="project-card reveal" data-category="quant">
-            <div class="project-number">06</div>
+            <div class="project-number">07</div>
             <div class="project-tags"><span>Regression</span><span>Housing</span></div>
             <h3>U.S. Housing Price Prediction</h3>
             <p>
@@ -295,16 +310,7 @@
             </dl>
           </article>
 
-          <article class="project-card reveal" data-category="investing risk">
-            <div class="project-number">07</div>
-            <div class="project-tags"><span>Seed-stage</span><span>Valuation</span></div>
-            <h3>Seed-Stage Deal Review</h3>
-            <p>
-              Evaluated a vertical-AI opportunity across traction quality, ARR multiples, ownership,
-              dilution, and exit scenarios; delivered a disciplined pass recommendation.
-            </p>
-            <p class="confidential-note">Case details anonymized to respect confidentiality.</p>
-          </article>
+
         </div>
       </section>
 

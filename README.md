@@ -35,3 +35,14 @@ No build step, package installation, or framework is required.
 - `styles.css` — theme, layout, and responsive design
 - `script.js` — navigation, reveal effects, and project filters
 - `assets/favicon.svg` — original compass favicon
+
+## Internship research visualizations
+
+Project 2 and Project 3 are featured as interactive case studies. The rest of the portfolio and its nautical visual identity are retained.
+
+- Project 2 uses the supplied `factor_model.csv`, `risk_comparison.csv`, and `scenarios.csv` exports. CSV values take precedence over inconsistent rounded figures in the memo. R² refers to the full five-factor model. The risk buttons share a fixed 0–40% scale; the scenario chart plots the 10th–90th percentiles with a median marker for a 60/40 world-equity / PE-proxy blend.
+- The source README identifies the PE benchmark input as a placeholder. The page explicitly labels results as research illustrations, not verified fund performance.
+- Project 3 summarizes the completed deal review through traction, valuation, and ownership lenses. It retains the pass conclusion while omitting company/investor identities, transaction figures, and confidential attachments. The “what would change the view” prompts synthesize the review's concerns.
+- Interactive controls use native buttons, pressed-state semantics, visible focus styles, and live regions. The initial charts and narrative remain readable without JavaScript.
+
+Validation: JavaScript syntax and Git whitespace checks; browser checks of risk toggles, due-diligence controls, project filtering, and the narrow-screen layout.
